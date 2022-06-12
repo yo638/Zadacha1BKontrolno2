@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupOptions>
+    <option>
+        <data>01.06.22</data>
+        <description>desciption1</description>
+        <vote>3</vote>
+    </option>
+    <option>
+        <data>02.06.22</data>
+        <description>desciption2</description>
+        <vote>3</vote>
+    </option>
+    <option>
+        <data>09.05.2000</data>
+        <description>description9</description>
+        <vote>1</vote>
+    </option>
+    <option>
+        <data>2022-06-16</data>
+        <description>description5</description>
+        <vote>0</vote>
+    </option>
+</groupOptions>

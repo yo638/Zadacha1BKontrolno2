@@ -29,7 +29,7 @@ public class RegistrationServlet extends HttpServlet {
         String data=request.getParameter("mydate");
         String description=request.getParameter("mydescription");
         java.util.logging.Logger logger =  java.util.logging.Logger.getLogger(this.getClass().getName());
-        logger.warning("We are in the servlet");
+        logger.warning("We are in the servlet.Let's just check smth.");
         datedesc a=new datedesc(data,description);
         if(repo.contains(a)) repo.addVote(a);
         else repo.add(a);

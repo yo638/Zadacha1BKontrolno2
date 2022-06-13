@@ -20,4 +20,29 @@
         <description>description5</description>
         <vote>0</vote>
     </option>
+    <option>
+        <data>2022-06-15</data>
+        <description>descriptionIT</description>
+        <vote>2</vote>
+    </option>
+    <option>
+        <data>2022-06-10</data>
+        <description></description>
+        <vote>0</vote>
+    </option>
+    <option>
+        <data>2022-06-18</data>
+        <description>jajaja</description>
+        <vote>0</vote>
+    </option>
+    <option>
+        <data>2022-06-25</data>
+        <description>yayaya</description>
+        <vote>1</vote>
+    </option>
+    <option>
+        <data>2022-06-26</data>
+        <description>kjkjkjk</description>
+        <vote>1</vote>
+    </option>
 </groupOptions>

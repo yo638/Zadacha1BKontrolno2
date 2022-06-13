@@ -18,26 +18,18 @@ import java.util.Objects;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class listofdates {
     @XmlElement(name = "option")
-    private static ArrayList<datedesc> options = new ArrayList<datedesc>();
-    private static String fileName;
+    protected static ArrayList<datedesc> options = new ArrayList<datedesc>();
+    private static String fileName="D:\\TU UNI\\Интернет Технологии\\Projects\\Kontrolno2IT\\src\\main\\resources\\dateoptions.xml";;
 
     public listofdates() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(
-                Objects.requireNonNull(
-                                classLoader.getResource("/dateoptions.xml"))
-                        .getFile());
-        System.out.println(file.getAbsolutePath());
-        fileName="D:\\TU UNI\\Интернет Технологии\\Projects\\Kontrolno2IT\\src\\main\\resources\\dateoptions.xml";
-        //fileName = file.getAbsolutePath();
+        this.setOptions(fileName);
     }
 
     public ArrayList<datedesc> getOptions() {
-        setOptions(fileName);
         return options;
     }
 
-    private void setOptions(String fileName) {
+    public void setOptions(String fileName) {
         XMLWorker worker = new XMLWorker();
         try {
             listofdates options = worker.readerFromXmlFile(fileName);
@@ -55,7 +47,6 @@ public class listofdates {
         try {
             worker.writeToXMLFile(fileName, this);
         } catch (JAXBException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
